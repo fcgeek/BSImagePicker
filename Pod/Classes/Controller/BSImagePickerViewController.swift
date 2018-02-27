@@ -136,6 +136,14 @@ open class BSImagePickerViewController : UINavigationController {
 // MARK: ImagePickerSettings proxy
 extension BSImagePickerViewController: BSImagePickerSettings {
 
+    @objc public var doneBarButtonTitle: String {
+        set {
+            settings.doneBarButtonTitle = newValue
+        }
+        get {
+            return settings.doneBarButtonTitle
+        }
+    }
 
     /**
      See BSImagePicketSettings for documentation
