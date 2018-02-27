@@ -139,6 +139,7 @@ extension BSImagePickerViewController: BSImagePickerSettings {
     @objc public var doneBarButtonTitle: String {
         set {
             settings.doneBarButtonTitle = newValue
+            photosViewController.doneBarButtonTitle = newValue
         }
         get {
             return settings.doneBarButtonTitle
